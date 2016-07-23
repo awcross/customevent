@@ -1,0 +1,42 @@
+{
+  "name": "custom-event",
+  "version": "0.1.0",
+  "description": "ES2015 CustomEvent ponyfill",
+  "license": "MIT",
+  "repository": "awcross/custom-event",
+  "author": {
+    "name": "Alex Cross",
+    "url": "alexcross.io"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava --verbose"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "custom",
+    "event",
+    "customevent",
+    "es2015",
+    "ponyfill",
+    "polyfill",
+    "shim",
+    "browser"
+  ],
+  "devDependencies": {
+    "ava": "*",
+    "jsdom": "^9.4.1",
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "node",
+      "browser"
+    ]
+  }
+}
