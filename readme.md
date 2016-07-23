@@ -44,4 +44,4 @@ Type: `object`
 
 ## License
 
-MIT © [Alex Cross](https://alexcross.io)
+MIT © [Alex Cross](http://alexcross.io)
