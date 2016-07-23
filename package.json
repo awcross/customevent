@@ -1,5 +1,5 @@
 {
-  "name": "custom-event",
+  "name": "customevent",
   "version": "0.1.0",
   "description": "ES2015 CustomEvent ponyfill",
   "license": "MIT",

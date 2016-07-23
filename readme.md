@@ -6,14 +6,14 @@
 ## Install
 
 ```
-$ npm install --save custom-event
+$ npm install --save customevent
 ```
 
 
 ## Usage
 
 ```js
-const MyCustomEvent = require('custom-event');
+const MyCustomEvent = require('customevent');
 
 new MyCustomEvent('click', {
 	cancelable: true,
