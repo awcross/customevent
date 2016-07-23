@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "ES2015 CustomEvent ponyfill",
   "license": "MIT",
-  "repository": "awcross/custom-event",
+  "repository": "awcross/customevent",
   "author": {
     "name": "Alex Cross",
     "url": "alexcross.io"

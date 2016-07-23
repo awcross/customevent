@@ -1,4 +1,4 @@
-# custom-event [![Build Status](https://travis-ci.org/awcross/custom-event.svg?branch=master)](https://travis-ci.org/awcross/custom-event)
+# customevent [![Build Status](https://travis-ci.org/awcross/custom-event.svg?branch=master)](https://travis-ci.org/awcross/custom-event)
 
 > ES2015 ponyfill for [`CustomEvent`](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent)
 
