@@ -1,6 +1,6 @@
 {
   "name": "customevent",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "CustomEvent ponyfill",
   "license": "MIT",
   "repository": "awcross/customevent",
