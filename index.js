@@ -10,7 +10,7 @@ function useNative() {
 
 // https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent
 module.exports = useNative() ? window.CustomEvent : function (event, params) {
-	const e = document.createEvent('CustomEvent');
+	var e = document.createEvent('CustomEvent');
 
 	params = params || {
 		bubbles: false,

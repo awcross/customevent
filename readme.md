@@ -1,6 +1,6 @@
 # customevent [![Build Status](https://travis-ci.org/awcross/customevent.svg?branch=master)](https://travis-ci.org/awcross/customevent)
 
-> ES2015 ponyfill for [`CustomEvent`](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent)
+> Ponyfill for [`CustomEvent`](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent)
 
 
 ## Install

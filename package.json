@@ -1,7 +1,7 @@
 {
   "name": "customevent",
   "version": "0.1.1",
-  "description": "ES2015 CustomEvent ponyfill",
+  "description": "CustomEvent ponyfill",
   "license": "MIT",
   "repository": "awcross/customevent",
   "author": {
@@ -14,14 +14,11 @@
   "scripts": {
     "test": "xo && ava --verbose"
   },
-  "files": [
-    "index.js"
-  ],
+  "main": "index.js",
   "keywords": [
     "custom",
     "event",
     "customevent",
-    "es2015",
     "ponyfill",
     "polyfill",
     "shim",
@@ -33,7 +30,6 @@
     "xo": "*"
   },
   "xo": {
-    "esnext": true,
     "envs": [
       "node",
       "browser"
