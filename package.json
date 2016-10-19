@@ -12,7 +12,8 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "xo && ava --verbose"
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "test": "xo && nyc ava"
   },
   "main": "index.js",
   "keywords": [
@@ -26,7 +27,9 @@
   ],
   "devDependencies": {
     "ava": "*",
+    "codecov": "^1.0.1",
     "jsdom": "^9.4.1",
+    "nyc": "^8.3.1",
     "xo": "*"
   },
   "xo": {
