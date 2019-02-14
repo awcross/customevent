@@ -13,13 +13,13 @@ $ npm install --save customevent
 ## Usage
 
 ```js
-const MyCustomEvent = require('customevent');
+const customEvent = require('customevent');
 
-new MyCustomEvent('click', {
+const event = new customEvent('click', {
 	cancelable: true,
 	bubbles: false,
 	detail: {
-		unicorn: 'rainbows'
+		foo: 'bar'
 	}
 });
 ```
@@ -27,11 +27,11 @@ new MyCustomEvent('click', {
 
 ## API
 
-### MyCustomEvent(eventType, [customEventInit])
+### customEvent(typeArg, [customEventInit])
 
 Creates a custom event and returns an event
 
-#### eventType
+#### typeArg
 
 Type: `string`
 
@@ -44,4 +44,4 @@ Type: `object`
 
 ## License
 
-MIT © [Alex Cross](http://alexcross.io)
+MIT © [Alex Cross](https://alexcross.io)
