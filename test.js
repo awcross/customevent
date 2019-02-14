@@ -1,13 +1,15 @@
-'use strict';
+import test from 'ava';
+import jsdom from 'jsdom';
 
-const test = require('ava');
-const jsdom = require('jsdom');
+const {JSDOM} = jsdom;
+const {window} = new JSDOM('');
+const {document} = (new JSDOM('')).window;
 
-global.document = jsdom.jsdom();
-global.window = document.defaultView;
+global.window = window;
+global.document = document;
 
 window.CustomEvent = undefined;
-const CE = require('./');
+const CE = require('.');
 
 test('should create an instance', t => {
 	const e = new CE('rainbow');
@@ -15,7 +17,7 @@ test('should create an instance', t => {
 	t.is(e.type, 'rainbow');
 	t.is(e.bubbles, false);
 	t.is(e.cancelable, false);
-	t.is(e.detail, undefined);
+	t.is(e.detail, null);
 });
 
 test('should create an instance that bubbles', t => {
@@ -26,7 +28,7 @@ test('should create an instance that bubbles', t => {
 	t.is(e.type, 'rainbow');
 	t.is(e.bubbles, true);
 	t.is(e.cancelable, false);
-	t.is(e.detail, undefined);
+	t.is(e.detail, null);
 });
 
 test('should create an instance that is cancelable', t => {
@@ -37,7 +39,7 @@ test('should create an instance that is cancelable', t => {
 	t.is(e.type, 'rainbow');
 	t.is(e.bubbles, false);
 	t.is(e.cancelable, true);
-	t.is(e.detail, undefined);
+	t.is(e.detail, null);
 });
 
 test('should create an instance that has detail object', t => {

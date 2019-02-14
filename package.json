@@ -1,41 +1,47 @@
 {
-  "name": "customevent",
-  "version": "1.0.0",
-  "description": "CustomEvent ponyfill",
-  "license": "MIT",
-  "repository": "awcross/customevent",
-  "author": {
-    "name": "Alex Cross",
-    "url": "alexcross.io"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-    "test": "xo && nyc ava"
-  },
-  "main": "index.js",
-  "keywords": [
-    "custom",
-    "event",
-    "customevent",
-    "ponyfill",
-    "polyfill",
-    "shim",
-    "browser"
-  ],
-  "devDependencies": {
-    "ava": "*",
-    "codecov": "^1.0.1",
-    "jsdom": "^9.4.1",
-    "nyc": "^8.3.1",
-    "xo": "*"
-  },
-  "xo": {
-    "envs": [
-      "node",
-      "browser"
-    ]
-  }
+	"name": "customevent",
+	"version": "1.0.0",
+	"description": "CustomEvent ponyfill",
+	"license": "MIT",
+	"repository": "awcross/customevent",
+	"author": {
+		"name": "Alex Cross",
+		"url": "alexcross.io"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+		"test": "xo && nyc ava"
+	},
+	"main": "index.js",
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"custom",
+		"event",
+		"customevent",
+		"ponyfill",
+		"polyfill",
+		"shim",
+		"browser"
+	],
+	"devDependencies": {
+		"ava": "^1.2.1",
+		"codecov": "^3.2.0",
+		"jsdom": "^13.2.0",
+		"nyc": "^13.2.0",
+		"xo": "^0.24.0"
+	},
+	"xo": {
+		"envs": [
+			"node",
+			"browser"
+		],
+		"rules": {
+			"no-var": 0
+		}
+	}
 }
